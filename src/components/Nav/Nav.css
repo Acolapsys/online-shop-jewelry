@@ -1,0 +1,29 @@
+
+
+/* Navigation
+------------------------------------------------------------------------------*/
+
+#menu {
+	text-align: center;
+	color: #737375;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+#menu li {
+	padding: 19px 19px 21px;
+	display: inline-block;
+	font-family: "Novecentowide";
+}
+
+
+
+
+#menu a {
+	color: #737375;
+}
+#menu a.active {
+	background-color: #737375;
+	color: white
+
+}

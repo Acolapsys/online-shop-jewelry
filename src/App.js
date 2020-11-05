@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+
+import {Header, Nav, LastProducts, QuickLinks, Footer} from "./components";
+
+const navItems = ['New collection', 'necklaces', 'earrings', 'Rings', 'Gift cards', 'Promotions']
+const onChangeCategory = (category) => (console.log(category))
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+
+      <Nav navItems={navItems} onChangeCategory={onChangeCategory}/>
+
+      {/* <Slider /> */}
+
+      <div id="body">
+        <div className="container">
+          <LastProducts />
+          <QuickLinks />
+          </div>
+      </div>
+
+      <Footer />
+
+      {/* <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script>window.jQuery || document.write("<script src='js/jquery-1.11.1.min.js'>\x3C/script>")</script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script> */}
     </div>
   );
 }
