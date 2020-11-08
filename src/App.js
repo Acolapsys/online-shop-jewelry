@@ -5,7 +5,9 @@ import "./App.css";
 import {Header, Nav, LastProducts, QuickLinks, Footer} from "./components";
 
 const navItems = ['New collection', 'necklaces', 'earrings', 'Rings', 'Gift cards', 'Promotions']
-const onChangeCategory = (category) => (console.log(category))
+const onChangeCategory = (category) => {
+  console.log(category)
+}
 
 function App() {
   return (

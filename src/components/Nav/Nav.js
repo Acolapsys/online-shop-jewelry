@@ -1,23 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import './Nav.css'
+import "./Nav.css";
 
-
-const Nav = ({navItems, onChangeCategory}) => {
+const Nav = ({ navItems, onChangeCategory }) => {
+  const [activeItem, setActiveItem] = useState("");
   return (
     <nav id="menu">
       <div className="container">
         <div className="trigger"></div>
         <ul>
-
-            {navItems.map((item, index) => {
-              return <li key={`${item}_${index}`} onClick={() => onChangeCategory(item)}>
-              <NavLink activeClassName="active" to="/products">{item}</NavLink>
-            </li>
-            })
-            }
-           
-         
+          {navItems.map((item, index) => {
+            return (
+              <li
+                className={activeItem === index ? 'active' : ''}
+                key={`${item}_${index}`}
+                onClick={() => setActiveItem(index)}
+                
+              >
+                <NavLink to="/products">{item}</NavLink>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </nav>
