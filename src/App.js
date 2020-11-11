@@ -1,28 +1,41 @@
 import React from "react";
+import { Route } from "react-router-dom";
 import "./App.css";
 
+import { Header, Footer, Nav, Breadcrumbs } from "./components";
+import { LastProducts, QuickLinks, Cart, Products } from "./pages";
 
-import {Header, Nav, LastProducts, QuickLinks, Footer} from "./components";
-
-const navItems = ['New collection', 'necklaces', 'earrings', 'Rings', 'Gift cards', 'Promotions']
+const navItems = [
+  "New collection",
+  "necklaces",
+  "earrings",
+  "Rings",
+  "Gift cards",
+  "Promotions",
+];
 const onChangeCategory = (category) => {
-  console.log(category)
-}
+  console.log(category);
+};
 
 function App() {
   return (
     <div className="App">
       <Header />
 
-      <Nav navItems={navItems} onChangeCategory={onChangeCategory}/>
+      <Nav navItems={navItems} onChangeCategory={onChangeCategory} />
+      <Breadcrumbs />
 
       {/* <Slider /> */}
 
       <div id="body">
         <div className="container">
-          <LastProducts />
-          <QuickLinks />
-          </div>
+          <Route path="/" exact>
+            <LastProducts />
+            <QuickLinks />
+          </Route>
+          <Route path='/products' component={Products} />
+          <Route path='/cart' component={Cart} />
+        </div>
       </div>
 
       <Footer />
