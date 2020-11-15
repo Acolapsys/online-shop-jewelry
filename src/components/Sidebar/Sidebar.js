@@ -7,13 +7,13 @@ const Sidebar = () => {
         <h3>Products per page:</h3>
         <fieldset>
           <input
-            checked=""
+            defaultChecked=""
             type="checkbox"
             id="crf-input-0"
             className="crf-i"
             style={{ position: "absolute", left: "-9999em" }}
           />
-          <label className="crf checked" for="crf-input-0">
+          <label className="crf checked" htmlFor="crf-input-0">
             8
           </label>
           <input
@@ -22,7 +22,7 @@ const Sidebar = () => {
             className="crf-i"
             style={{ position: "absolute", left: "-9999em" }}
           />
-          <label className="crf" for="crf-input-1">
+          <label className="crf" htmlFor="crf-input-1">
             16
           </label>
           <input
@@ -31,7 +31,7 @@ const Sidebar = () => {
             className="crf-i"
             style={{ position: "absolute", left: "-9999em" }}
           />
-          <label className="crf" for="crf-input-2">
+          <label className="crf" htmlFor="crf-input-2">
             32
           </label>
         </fieldset>
@@ -40,13 +40,13 @@ const Sidebar = () => {
         <h3>Sort by:</h3>
         <fieldset>
           <input
-            checked=""
+            defaultChecked=""
             type="checkbox"
             id="crf-input-3"
             className="crf-i"
             style={{ position: "absolute", left: "-9999em" }}
           />
-          <label className="crf checked" for="crf-input-3">
+          <label className="crf checked" htmlFor="crf-input-3">
             Popularity
           </label>
           <input
@@ -55,7 +55,7 @@ const Sidebar = () => {
             className="crf-i"
             style={{ position: "absolute", left: "-9999em" }}
           />
-          <label className="crf" for="crf-input-4">
+          <label className="crf" htmlFor="crf-input-4">
             Date
           </label>
           <input
@@ -64,7 +64,7 @@ const Sidebar = () => {
             className="crf-i"
             style={{ position: "absolute", left: "-9999em" }}
           />
-          <label className="crf" for="crf-input-5">
+          <label className="crf" htmlFor="crf-input-5">
             Price
           </label>
         </fieldset>
@@ -73,13 +73,13 @@ const Sidebar = () => {
         <h3>Condition:</h3>
         <fieldset>
           <input
-            checked=""
+            defaultChecked=""
             type="checkbox"
             id="crf-input-6"
             className="crf-i"
             style={{ position: "absolute", left: "-9999em" }}
           />
-          <label className="crf checked" for="crf-input-6">
+          <label className="crf checked" htmlFor="crf-input-6">
             New
           </label>
           <input
@@ -88,7 +88,7 @@ const Sidebar = () => {
             className="crf-i"
             style={{ position: "absolute", left: "-9999em" }}
           />
-          <label className="crf" for="crf-input-7">
+          <label className="crf" htmlFor="crf-input-7">
             Used
           </label>
         </fieldset>
@@ -107,14 +107,14 @@ const Sidebar = () => {
             ></div>
             <a
               className="ui-slider-handle ui-state-default ui-corner-all"
-              href="#"
+              href="/"
               style={{left: '10%'}}
             >
               <span>$500</span>
             </a>
             <a
               className="ui-slider-handle ui-state-default ui-corner-all"
-              href="#"
+              href="/"
               style={{left: '70%'}}
             >
               <span>$3500</span>

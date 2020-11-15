@@ -1,0 +1,145 @@
+{
+	"products": [
+		{
+			"id": 0,
+			"image": "./images/1.jpg",
+			"title": "Silver ring",
+			"price": "$1 850.00",
+			"amount": 16,
+			"variations": ["silver", "platinum"],
+			"categories": ["ring", "silver"],
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+		},
+		{
+			"id": 1,
+			"image": "./images/11.jpg",
+			"title": "Silver necklace",
+			"price": "$1 250.00",
+			"amount": 10,
+			"variations": ["silver", "platinum"],
+			"categories": ["necklace", "silver"],
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+		},
+		{
+			"id": 2,
+			"image": "./images/12.jpg",
+			"title": "Silver bracelet",
+			"price": "$1 350.00",
+			"amount": 16,
+			"variations": ["silver", "platinum"],
+			"categories": ["bracelet", "silver"],
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+		},
+		{
+			"id": 3,
+			"image": "./images/13.jpg",
+			"title": "Platinum ring",
+			"price": "$1 150.00",
+			"amount": 16,
+			"variations": ["silver", "platinum"],
+			"categories": ["ring", "platinum"],
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+		},
+		{
+			"id": 4,
+			"image": "./images/14.jpg",
+			"title": "Silver earing",
+			"price": "$1 100.00",
+			"amount": 160,
+			"variations": ["silver", "platinum"],
+			"categories": ["earing", "silver"],
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+		},
+		{
+			"id": 5,
+			"image": "./images/15.jpg",
+			"title": "Gold pendant",
+			"price": "$1 050.00",
+			"amount": 16,
+			"variations": ["gold", "platinum"],
+			"categories": ["pendant", "gold"],
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+		},
+		{
+			"id": 6,
+			"image": "./images/16.jpg",
+			"title": "Gold eagle ring",
+			"price": "$2 850.00",
+			"amount": 6,
+			"variations": ["silver", "platinum", "gold"],
+			"categories": ["ring", "gold"],
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+		},
+		{
+			"id": 7,
+			"image": "./images/17.jpg",
+			"title": "Silver ethnic bracelet",
+			"price": "$2 850.00",
+			"amount": 16,
+			"variations": ["silver", "platinum"],
+			"categories": ["bracelet", "silver"],
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+		},
+		{
+			"id": 8,
+			"image": "./images/13.jpg",
+			"title": "Silver ring",
+			"price": "$1 850.00",
+			"amount": 16,
+			"variations": ["silver", "platinum"],
+			"categories": ["ring", "silver"],
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+		},
+		{
+			"id": 9,
+			"image": "./images/12.jpg",
+			"title": "Platinum cross pendant",
+			"price": "$3 550.00",
+			"amount": 16,
+			"variations": ["silver", "platinum"],
+			"categories": ["pendant", "platinum", "religious"],
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+		},
+		{
+			"id": 10,
+			"image": "./images/11.jpg",
+			"title": "Gold wedding ring",
+			"price": "$1 750.00",
+			"amount": 16,
+			"variations": ["gold", "platinum"],
+			"categories": ["ring", "gold"],
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+		},
+		{
+			"id": 11,
+			"image": "./images/12.jpg",
+			"title": "Silver ring",
+			"price": "$1 150.00",
+			"amount": 16,
+			"variations": ["silver", "platinum"],
+			"categories": ["ring", "silver"],
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+		},
+		{
+			"id": 12,
+			"image": "./images/13.jpg",
+			"title": "Gold ring",
+			"price": "$1 050.00",
+			"amount": 16,
+			"variations": ["silver", "platinum"],
+			"categories": ["ring", "gold"],
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+		},
+		{
+			"id": 13,
+			"image": "./images/14.jpg",
+			"title": "Silver pendant",
+			"price": "$1 650.00",
+			"amount": 16,
+			"variations": ["silver", "platinum"],
+			"categories": ["pendant", "silver"],
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+		}
+			
+		]
+}

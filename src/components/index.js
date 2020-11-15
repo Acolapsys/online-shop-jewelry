@@ -9,4 +9,3 @@ export {default as Pagination} from './Pagination/Pagination'
 export {default as Product} from './Product/Product'
 export {default as Sidebar} from './Sidebar/Sidebar'
 
-

@@ -74,7 +74,7 @@ const Cart = () => {
         <h3>
           Total to pay: <strong>$4 530.00</strong>
         </h3>
-        <a href="#" className="btn-grey">
+        <a href="/" className="btn-grey">
           Finalize and pay
         </a>
       </div>

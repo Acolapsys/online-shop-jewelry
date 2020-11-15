@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Breadcrumbs = () => {
   return (
     <div id="breadcrumbs">
-      <div class="container">
+      <div className="container">
         <ul>
           <li>
-            <a href="#">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>Product results</li>
         </ul>

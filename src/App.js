@@ -1,9 +1,12 @@
 import React from "react";
 import { Route } from "react-router-dom";
+import getProducts from "./api/api";
 import "./App.css";
 
 import { Header, Footer, Nav, Breadcrumbs } from "./components";
-import { LastProducts, QuickLinks, Cart, Products } from "./pages";
+import { LastProducts, QuickLinks, Cart } from "./pages";
+import ProductFull from "./pages/ProductFull/ProductFull";
+import ProductsContainer from "./pages/Products/ProductsContainer";
 
 const navItems = [
   "New collection",
@@ -18,6 +21,7 @@ const onChangeCategory = (category) => {
 };
 
 function App() {
+  getProducts()
   return (
     <div className="App">
       <Header />
@@ -33,8 +37,9 @@ function App() {
             <LastProducts />
             <QuickLinks />
           </Route>
-          <Route path='/products' component={Products} />
+          <Route path='/products' component={ProductsContainer} />
           <Route path='/cart' component={Cart} />
+          <Route path='/product/:id' component={ProductFull} />
         </div>
       </div>
 
