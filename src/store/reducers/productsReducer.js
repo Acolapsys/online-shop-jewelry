@@ -1,4 +1,3 @@
-const SET_PRODUCTS = "SET_PRODUCTS"
 
 
 
@@ -11,7 +10,7 @@ const  productsReducer = (state = initialState, action) => {
     
   
         switch (action.type) {
-            case (SET_PRODUCTS): {
+            case ("SET_PRODUCTS"): {
                 debugger
                 return {...state, products: action.products}}
             default: 
@@ -20,8 +19,6 @@ const  productsReducer = (state = initialState, action) => {
    
 }
 
-export const setProducts = (products) => {
-    return {type: SET_PRODUCTS, products}
-}
+
 
 export default productsReducer
