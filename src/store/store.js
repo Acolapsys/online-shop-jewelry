@@ -1,18 +1,8 @@
-import {combineReducers, createStore } from 'redux'
-import generalReducer from './reducers/generalReducer'
-import productsReducer from './reducers/productsReducer'
-
-
-
-
-const reducers = combineReducers({
-    productsPage: productsReducer,
-    general: generalReducer
-})
-
+import {createStore } from 'redux'
+import reducers from './reducers'
 
 
 
 const store = createStore(reducers)
-
+window.store = store
 export default store

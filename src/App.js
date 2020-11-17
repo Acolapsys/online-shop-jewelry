@@ -6,7 +6,7 @@ import "./App.css";
 import { Header, Footer, Nav, Breadcrumbs } from "./components";
 import { LastProducts, QuickLinks, Cart } from "./pages";
 import ProductFull from "./pages/ProductFull/ProductFull";
-import ProductsContainer from "./pages/Products/ProductsContainer";
+import Products from "./pages/Products/Products";
 
 const navItems = [
   "New collection",
@@ -37,7 +37,7 @@ function App() {
             <LastProducts />
             <QuickLinks />
           </Route>
-          <Route path='/products' component={ProductsContainer} />
+          <Route path='/products' component={Products} />
           <Route path='/cart' component={Cart} />
           <Route path='/product/:id' component={ProductFull} />
         </div>

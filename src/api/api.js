@@ -1,6 +1,6 @@
 
 import axios from 'axios'
-import { setError, setIsLoading } from '../store/reducers/generalReducer';
+import { setError, setIsLoading } from '../store/actions/generalAction';
 
 
 
