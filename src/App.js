@@ -1,4 +1,6 @@
-import React from "react";
+import Axios from "axios";
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import { Route } from "react-router-dom";
 import getProducts from "./api/api";
 import "./App.css";
@@ -7,6 +9,9 @@ import { Header, Footer, Nav, Breadcrumbs } from "./components";
 import { LastProducts, QuickLinks, Cart } from "./pages";
 import ProductFull from "./pages/ProductFull/ProductFull";
 import Products from "./pages/Products/Products";
+import {setCategory} from "./store/actions/filterAction"
+import { setError, setIsLoading } from "./store/actions/generalAction";
+import { setProducts } from "./store/actions/productsAction";
 
 const navItems = [
   "New collection",
@@ -16,11 +21,32 @@ const navItems = [
   "Gift cards",
   "Promotions",
 ];
-const onChangeCategory = (category) => {
-  console.log(category);
-};
+
+
 
 function App() {
+  
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(setIsLoading(true));
+    
+    Axios
+        .get("http://localhost:3001/products")
+        .then((res) => {
+          dispatch(setIsLoading(false));
+          dispatch(setProducts(res.data));
+        })
+        .catch((error) => {
+          dispatch(setError(error.message));
+          dispatch(setIsLoading(false));
+        });
+      
+  },[])
+  const onChangeCategory = (category) => {
+    dispatch(setCategory(category))
+    console.log("cat=", category);
+  };
+  
   getProducts()
   return (
     <div className="App">

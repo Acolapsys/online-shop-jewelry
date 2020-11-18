@@ -9,36 +9,21 @@ import { setProducts } from "../../store/actions/productsAction";
 import { setError, setIsLoading } from "../../store/actions/generalAction";
 
 const Products = () => {
-  const dispatch = useDispatch()
-  const {isLoading, isError, products} = useSelector(({productsPage, general}) => {
-    return {
+
+  const {isLoading,  products, productsPerPage} = useSelector(({productsPage, general, filters}) => {
+    return {      
       isLoading: general.isLoading,
-      isError: general.isError,
-      products: productsPage.products
+      products: productsPage.products,
+      productsPerPage: filters.productsPerPage
     }
   })
-  useEffect(() => {
-    dispatch(setIsLoading(true));
-    
-    Axios
-        .get("http://localhost:3000/db.json")
-        .then((res) => {
-          dispatch(setIsLoading(false));
-          dispatch(setProducts(res.data.products));
-          console.log(res.data.products)
-        })
-        .catch((error) => {
-          dispatch(setError(error.message));
-          dispatch(setIsLoading(false));
-        });
-      
-  },[])
 
+ 
   return       <div id="body">
   <div className="container">
     <Pagination />
     <div className="products-wrap">
-      <Sidebar />
+      <Sidebar productsPerPage={productsPerPage} />
       <div id="content">
         <section className="products">
           {products.map((product) => {
@@ -48,7 +33,6 @@ const Products = () => {
                 productImage={product.image}
                 productTitle={product.title}
                 productPrice={product.price}
-                productLink="/product"
                 productId={product.id}
               />
             );

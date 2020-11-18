@@ -1,5 +1,12 @@
 import React from "react";
 
+
+
+
+const productsPerPageChange = (count) => {
+
+}
+
 const Sidebar = () => {
   return (
     <aside id="sidebar">
@@ -13,7 +20,7 @@ const Sidebar = () => {
             className="crf-i"
             style={{ position: "absolute", left: "-9999em" }}
           />
-          <label className="crf checked" htmlFor="crf-input-0">
+          <label className="crf checked" htmlFor="crf-input-0" onClick={productsPerPageChange}>
             8
           </label>
           <input

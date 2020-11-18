@@ -3,6 +3,14 @@ import { NavLink } from "react-router-dom";
 import "./Nav.css";
 
 const Nav = ({ navItems, onChangeCategory }) => {
+
+
+
+
+  const onSelectItem = (index) => {
+    setActiveItem(index)
+    onChangeCategory(index)
+  }
   const [activeItem, setActiveItem] = useState("");
   return (
     <nav id="menu">
@@ -14,7 +22,7 @@ const Nav = ({ navItems, onChangeCategory }) => {
               <li
                 className={activeItem === index ? 'active' : ''}
                 key={`${item}_${index}`}
-                onClick={() => setActiveItem(index)}
+                onClick={() => onSelectItem(index)}
                 
               >
                 <NavLink to="/products">{item}</NavLink>

@@ -11,22 +11,22 @@ const ProductFull = (props) => {
     const [isLoading, setIsLoading] = useState(false)
     const productId =  props.match.params.id
 
-useEffect(() => {
-    setIsLoading(true)
+// useEffect(() => {
+//     setIsLoading(true)
     
-    Axios
-        .get("http://localhost:3000/db.json")
-        .then((res) => {
-          setIsLoading(false);
-          setProducts(res.data.products[productId])
-        })
-        .catch((error) => {
-          setError(error.message);
-          console.log(error);
-          setIsLoading(false);
-        });
+//     Axios
+//         .get("http://localhost:3001/products")
+//         .then((res) => {
+//           setIsLoading(false);
+//           setProducts(res.data[productId])
+//         })
+//         .catch((error) => {
+//           setError(error.message);
+//           console.log(error);
+//           setIsLoading(false);
+//         });
 
-}, [])
+// }, [])
 
   return (
     <div className="product">
