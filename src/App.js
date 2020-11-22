@@ -1,8 +1,7 @@
-import Axios from "axios";
+
 import React, { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Route } from "react-router-dom";
-import getProducts from "./api/api";
 import "./App.css";
 
 import { Header, Footer, Nav, Breadcrumbs } from "./components";
@@ -10,49 +9,33 @@ import { LastProducts, QuickLinks, Cart } from "./pages";
 import ProductFull from "./pages/ProductFull/ProductFull";
 import Products from "./pages/Products/Products";
 import {setCategory} from "./store/actions/filterAction"
-import { setError, setIsLoading } from "./store/actions/generalAction";
-import { setProducts } from "./store/actions/productsAction";
+import { fetchCategories } from "./store/actions/generalAction";
+import { fetchProducts } from "./store/actions/productsAction";
 
-const navItems = [
-  "New collection",
-  "necklaces",
-  "earrings",
-  "Rings",
-  "Gift cards",
-  "Promotions",
-];
+
+
 
 
 
 function App() {
-  
   const dispatch = useDispatch();
+  
+  const categoriesList = useSelector(({general}) => general.categoriesList)
+  const category = useSelector(({filters}) => filters.category)
+  
   useEffect(() => {
-    dispatch(setIsLoading(true));
+    dispatch(fetchCategories())
     
-    Axios
-        .get("http://localhost:3001/products")
-        .then((res) => {
-          dispatch(setIsLoading(false));
-          dispatch(setProducts(res.data));
-        })
-        .catch((error) => {
-          dispatch(setError(error.message));
-          dispatch(setIsLoading(false));
-        });
-      
-  },[])
+    dispatch(fetchProducts())      
+  },[category])
   const onChangeCategory = (category) => {
     dispatch(setCategory(category))
-    console.log("cat=", category);
   };
   
-  getProducts()
   return (
     <div className="App">
       <Header />
-
-      <Nav navItems={navItems} onChangeCategory={onChangeCategory} />
+      <Nav categoriesList={categoriesList} onChangeCategory={onChangeCategory} />
       <Breadcrumbs />
 
       {/* <Slider /> */}

@@ -1,4 +1,33 @@
 {
+
+
+
+	"categories": [
+		{
+			"id": 0,
+			"type": "All products"
+		},
+		{
+			"id": 1,
+			"type": "Earrings"
+		},
+		{
+			"id": 2,
+			"type": "Rings"
+		},
+		{
+			"id": 3,
+			"type": "Bracelets"
+		},
+		{
+			"id": 4,
+			"type": "Pendants"
+		},
+		{
+			"id": 5,
+			"type": "Necklaces"
+		}
+	],
 	"products": [
 		{
 			"id": 0,
@@ -7,7 +36,7 @@
 			"price": "$1 850.00",
 			"amount": 16,
 			"variations": ["silver", "platinum"],
-			"categories": ["ring", "silver"],
+			"categories": [2],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -17,7 +46,7 @@
 			"price": "$1 250.00",
 			"amount": 10,
 			"variations": ["silver", "platinum"],
-			"categories": ["necklace", "silver"],
+			"categories": [5],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -27,7 +56,7 @@
 			"price": "$1 350.00",
 			"amount": 16,
 			"variations": ["silver", "platinum"],
-			"categories": ["bracelet", "silver"],
+			"categories": [3],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -37,7 +66,7 @@
 			"price": "$1 150.00",
 			"amount": 16,
 			"variations": ["silver", "platinum"],
-			"categories": ["ring", "platinum"],
+			"categories": [2],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -47,7 +76,7 @@
 			"price": "$1 100.00",
 			"amount": 160,
 			"variations": ["silver", "platinum"],
-			"categories": ["earing", "silver"],
+			"categories": [1],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -57,7 +86,7 @@
 			"price": "$1 050.00",
 			"amount": 16,
 			"variations": ["gold", "platinum"],
-			"categories": ["pendant", "gold"],
+			"categories": [4],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -67,7 +96,7 @@
 			"price": "$2 850.00",
 			"amount": 6,
 			"variations": ["silver", "platinum", "gold"],
-			"categories": ["ring", "gold"],
+			"categories": [2],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -77,7 +106,7 @@
 			"price": "$2 850.00",
 			"amount": 16,
 			"variations": ["silver", "platinum"],
-			"categories": ["bracelet", "silver"],
+			"categories": [3],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -87,7 +116,7 @@
 			"price": "$1 850.00",
 			"amount": 16,
 			"variations": ["silver", "platinum"],
-			"categories": ["ring", "silver"],
+			"categories": [2],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -97,7 +126,7 @@
 			"price": "$3 550.00",
 			"amount": 16,
 			"variations": ["silver", "platinum"],
-			"categories": ["pendant", "platinum", "religious"],
+			"categories": [4],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -107,7 +136,7 @@
 			"price": "$1 750.00",
 			"amount": 16,
 			"variations": ["gold", "platinum"],
-			"categories": ["ring", "gold"],
+			"categories": [2],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -117,7 +146,7 @@
 			"price": "$1 150.00",
 			"amount": 16,
 			"variations": ["silver", "platinum"],
-			"categories": ["ring", "silver"],
+			"categories": [2],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -127,7 +156,7 @@
 			"price": "$1 050.00",
 			"amount": 16,
 			"variations": ["silver", "platinum"],
-			"categories": ["ring", "gold"],
+			"categories": [2],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -137,7 +166,7 @@
 			"price": "$1 650.00",
 			"amount": 16,
 			"variations": ["silver", "platinum"],
-			"categories": ["pendant", "silver"],
+			"categories": [4],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		}
 			

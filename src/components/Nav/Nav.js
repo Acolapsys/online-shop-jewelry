@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
 
-const Nav = ({ navItems, onChangeCategory }) => {
 
 
 
+const Nav = ({ categoriesList, onChangeCategory }) => {
 
   const onSelectItem = (index) => {
     setActiveItem(index)
@@ -17,15 +17,15 @@ const Nav = ({ navItems, onChangeCategory }) => {
       <div className="container">
         <div className="trigger"></div>
         <ul>
-          {navItems.map((item, index) => {
+          {categoriesList.map((item) => {
             return (
               <li
-                className={activeItem === index ? 'active' : ''}
-                key={`${item}_${index}`}
-                onClick={() => onSelectItem(index)}
+                className={activeItem === item.id ? 'active' : ''}
+                key={`${item.type}_${item.id}`}
+                onClick={() => onSelectItem(item.id)}
                 
               >
-                <NavLink to="/products">{item}</NavLink>
+                <NavLink to="/products">{item.type}</NavLink>
               </li>
             );
           })}

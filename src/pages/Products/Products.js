@@ -1,18 +1,14 @@
 
-import React, { useEffect, useState} from "react";
-import { connect, useDispatch, useSelector  } from "react-redux";
-import Axios from "axios";
-
+import React from "react";
+import {useSelector  } from "react-redux";
 
 import { Product, Pagination, Sidebar } from "../../components";
-import { setProducts } from "../../store/actions/productsAction";
-import { setError, setIsLoading } from "../../store/actions/generalAction";
 
 const Products = () => {
 
-  const {isLoading,  products, productsPerPage} = useSelector(({productsPage, general, filters}) => {
+  const {category, products, productsPerPage} = useSelector(({productsPage, filters}) => {
     return {      
-      isLoading: general.isLoading,
+      category: filters.category,
       products: productsPage.products,
       productsPerPage: filters.productsPerPage
     }
@@ -26,8 +22,11 @@ const Products = () => {
       <Sidebar productsPerPage={productsPerPage} />
       <div id="content">
         <section className="products">
-          {products.map((product) => {
-            return ( isLoading ? 'Loading' :
+          {products
+          .filter((item) => category ? item.categories[0] === category : item)
+          .slice(0, productsPerPage)
+          .map((product) => {
+            return ( 
               <Product
                 key={product.id}
                 productImage={product.image}
@@ -50,13 +49,3 @@ const Products = () => {
 
 export default Products
 
-// const mapStateToProps = (state) => {
-//   return {
-//     products: productsPage.products,
-//     isLoading: general.isLoading,
-//     error: general.error
-//   }
-// }
-// export default connect(mapStateToProps, {
-//   setProducts, setIsLoading, setError
-// })(Products)

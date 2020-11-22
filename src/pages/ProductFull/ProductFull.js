@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Axios from "axios";
 
 
 
@@ -7,8 +6,6 @@ import Axios from "axios";
 
 const ProductFull = (props) => {
     const [products, setProducts] = useState([])
-    const [error, setError] = useState('')
-    const [isLoading, setIsLoading] = useState(false)
     const productId =  props.match.params.id
 
 // useEffect(() => {
