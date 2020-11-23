@@ -1,79 +1,63 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setPerPageAmount, setSortBy } from "../../store/actions/filterAction";
 
-
-
-
-const productsPerPageChange = (count) => {
-
-}
+const perPageList = [8, 16, 32];
+const sortList = ['Popularity', 'Date', 'Price'];
 
 const Sidebar = () => {
+  const dispatch = useDispatch();
+  const {activePerPage} = useSelector(({filters}) => ({
+    activePerPage: filters.productsPerPage
+  }));
+  const {activeSortBy} = useSelector(({filters}) => ({
+    activeSortBy: filters.sortBy
+  }));
+
+  const productsPerPageChange = (count) => {
+    dispatch(setPerPageAmount(count));
+    console.log(activePerPage, count);
+  };
+
+  const sortByChange = (sortBy) => {
+    dispatch(setSortBy(sortBy));
+  };
   return (
     <aside id="sidebar">
       <div className="widget">
         <h3>Products per page:</h3>
         <fieldset>
-          <input
-            defaultChecked=""
-            type="checkbox"
-            id="crf-input-0"
-            className="crf-i"
-            style={{ position: "absolute", left: "-9999em" }}
-          />
-          <label className="crf checked" htmlFor="crf-input-0" onClick={productsPerPageChange}>
-            8
-          </label>
-          <input
-            type="checkbox"
-            id="crf-input-1"
-            className="crf-i"
-            style={{ position: "absolute", left: "-9999em" }}
-          />
-          <label className="crf" htmlFor="crf-input-1">
-            16
-          </label>
-          <input
-            type="checkbox"
-            id="crf-input-2"
-            className="crf-i"
-            style={{ position: "absolute", left: "-9999em" }}
-          />
-          <label className="crf" htmlFor="crf-input-2">
-            32
-          </label>
+          {perPageList.map((item, index) => {
+            return (
+                <label 
+                className={`crf ${item === activePerPage ? 'checked'  : ''}`} 
+                key={`${item}_${index}`}
+                style={{cursor: "pointer"}}
+                onClick={() => productsPerPageChange(item)}
+                >
+                  {item}
+                </label>
+            );
+          })}
         </fieldset>
       </div>
       <div className="widget">
         <h3>Sort by:</h3>
         <fieldset>
-          <input
-            defaultChecked=""
-            type="checkbox"
-            id="crf-input-3"
-            className="crf-i"
-            style={{ position: "absolute", left: "-9999em" }}
-          />
-          <label className="crf checked" htmlFor="crf-input-3">
-            Popularity
-          </label>
-          <input
-            type="checkbox"
-            id="crf-input-4"
-            className="crf-i"
-            style={{ position: "absolute", left: "-9999em" }}
-          />
-          <label className="crf" htmlFor="crf-input-4">
-            Date
-          </label>
-          <input
-            type="checkbox"
-            id="crf-input-5"
-            className="crf-i"
-            style={{ position: "absolute", left: "-9999em" }}
-          />
-          <label className="crf" htmlFor="crf-input-5">
-            Price
-          </label>
+        {sortList.map((item, index) => {
+            return (
+                <label 
+                className={`crf ${item === activeSortBy ? 'checked'  : ''}`} 
+                key={`${item}_${index}`}
+                style={{cursor: "pointer"}}
+                onClick={() => sortByChange(item)}
+                >
+                  {item}
+                </label>
+            );
+          })}
+
+
         </fieldset>
       </div>
       <div className="widget">
@@ -110,19 +94,19 @@ const Sidebar = () => {
           >
             <div
               className="ui-slider-range ui-widget-header ui-corner-all"
-              style={{left: '10%', width: '60%'}}
+              style={{ left: "10%", width: "60%" }}
             ></div>
             <a
               className="ui-slider-handle ui-state-default ui-corner-all"
               href="/"
-              style={{left: '10%'}}
+              style={{ left: "10%" }}
             >
               <span>$500</span>
             </a>
             <a
               className="ui-slider-handle ui-state-default ui-corner-all"
               href="/"
-              style={{left: '70%'}}
+              style={{ left: "70%" }}
             >
               <span>$3500</span>
             </a>

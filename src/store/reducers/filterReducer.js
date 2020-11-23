@@ -4,7 +4,7 @@
 
 const initialState = {
     category: 0,
-    sortBy: "popular",
+    sortBy: "Popularity",
     productsPerPage: 8
 }
 
