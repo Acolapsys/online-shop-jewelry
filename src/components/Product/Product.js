@@ -3,13 +3,19 @@ import { Link } from "react-router-dom";
 import './Product.css'
 
 import ContentLoader from "react-content-loader"
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from "../../store/actions/cartAction";
+import utils from "../../utils"
 
 
 
 
 
-const Product = ({ productImage, productTitle, productPrice, productId }) => {
+const Product = ({ product }) => {
+  const dispatch = useDispatch()
+  const onAddToCartClick = (product) => {
+    dispatch(addToCart(product))
+  }
   
   const isLoading = useSelector(({general}) => general.isLoading)
   if  (isLoading) {
@@ -29,12 +35,12 @@ const Product = ({ productImage, productTitle, productPrice, productId }) => {
   </ContentLoader>) }
   return (
    <article>
-      <Link to={"/product/" + productId}><img src={productImage} alt="" /></Link>
-      <h3><Link to={"/product/" + productId}>{productTitle}</Link></h3>
-      <h4><Link to={"/product/" + productId}>{productPrice}</Link></h4>
-      <Link to="/cart" className="btn-add">
+      <Link to={"/product/" + product.id}><img src={product.image} alt="" /></Link>
+      <h3><Link to={"/product/" + product.id}>{product.title}</Link></h3>
+      <h4><Link to={"/product/" + product.id}>{utils.formatCurrency(product.price)}</Link></h4>
+      <span onClick={() => {onAddToCartClick(product)}} className="btn-add">
         Add to cart
-      </Link>
+      </span>
     </article>
   )
   

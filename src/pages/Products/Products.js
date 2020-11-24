@@ -29,10 +29,7 @@ const Products = () => {
             return ( 
               <Product
                 key={product.id}
-                productImage={product.image}
-                productTitle={product.title}
-                productPrice={product.price}
-                productId={product.id}
+                product={product}
               />
             );
           })}

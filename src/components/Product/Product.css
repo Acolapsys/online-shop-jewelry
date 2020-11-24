@@ -11,6 +11,7 @@
 }
 
 .products .btn-add {
+	cursor: pointer;
 	height: 40px;
 	background-color: #cecece;
 	display: block;

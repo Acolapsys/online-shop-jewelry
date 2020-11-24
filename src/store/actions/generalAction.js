@@ -24,7 +24,6 @@ export const fetchCategories = () => (dispatch) => {
     Axios
         .get("http://localhost:3001/categories")
         .then(({data}) => {
-            console.log(data);
           
           dispatch(setCategoriesList(data));
           dispatch(setIsLoading(false));
