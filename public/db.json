@@ -38,7 +38,7 @@
 			"image": "./images/1.jpg",
 			"title": "Silver ring",
 			"price": 1850,
-			"amount": 16,
+			"stock": 16,
 			"variations": ["silver", "platinum"],
 			"categories": [2],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
@@ -48,7 +48,7 @@
 			"image": "./images/11.jpg",
 			"title": "Silver necklace",
 			"price": 1850,
-			"amount": 10,
+			"stock": 10,
 			"variations": ["silver", "platinum"],
 			"categories": [5],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
@@ -58,7 +58,7 @@
 			"image": "./images/12.jpg",
 			"title": "Silver bracelet",
 			"price": 1850,
-			"amount": 16,
+			"stock": 16,
 			"variations": ["silver", "platinum"],
 			"categories": [3],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
@@ -68,7 +68,7 @@
 			"image": "./images/13.jpg",
 			"title": "Platinum ring",
 			"price": 1850,
-			"amount": 16,
+			"stock": 16,
 			"variations": ["silver", "platinum"],
 			"categories": [2],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
@@ -78,7 +78,7 @@
 			"image": "./images/14.jpg",
 			"title": "Silver earing",
 			"price": 1850,
-			"amount": 160,
+			"stock": 160,
 			"variations": ["silver", "platinum"],
 			"categories": [1],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
@@ -88,7 +88,7 @@
 			"image": "./images/15.jpg",
 			"title": "Gold pendant",
 			"price": 1050,
-			"amount": 16,
+			"stock": 16,
 			"variations": ["gold", "platinum"],
 			"categories": [4],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
@@ -98,7 +98,7 @@
 			"image": "./images/16.jpg",
 			"title": "Gold eagle ring",
 			"price": 2850,
-			"amount": 6,
+			"stock": 6,
 			"variations": ["silver", "platinum", "gold"],
 			"categories": [2],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
@@ -108,7 +108,7 @@
 			"image": "./images/17.jpg",
 			"title": "Silver ethnic bracelet",
 			"price": 2850,
-			"amount": 16,
+			"stock": 16,
 			"variations": ["silver", "platinum"],
 			"categories": [3],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
@@ -118,7 +118,7 @@
 			"image": "./images/13.jpg",
 			"title": "Silver ring",
 			"price": 1850,
-			"amount": 16,
+			"stock": 16,
 			"variations": ["silver", "platinum"],
 			"categories": [2],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
@@ -128,7 +128,7 @@
 			"image": "./images/12.jpg",
 			"title": "Platinum cross pendant",
 			"price": 3550,
-			"amount": 16,
+			"stock": 16,
 			"variations": ["silver", "platinum"],
 			"categories": [4],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
@@ -138,7 +138,7 @@
 			"image": "./images/11.jpg",
 			"title": "Gold wedding ring",
 			"price": 1750,
-			"amount": 16,
+			"stock": 16,
 			"variations": ["gold", "platinum"],
 			"categories": [2],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
@@ -148,7 +148,7 @@
 			"image": "./images/12.jpg",
 			"title": "Silver ring",
 			"price": 1150,
-			"amount": 16,
+			"stock": 16,
 			"variations": ["silver", "platinum"],
 			"categories": [2],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
@@ -158,7 +158,7 @@
 			"image": "./images/13.jpg",
 			"title": "Gold ring",
 			"price": 1050,
-			"amount": 16,
+			"stock": 16,
 			"variations": ["silver", "platinum"],
 			"categories": [2],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
@@ -168,7 +168,7 @@
 			"image": "./images/14.jpg",
 			"title": "Silver pendant",
 			"price": 1650,
-			"amount": 16,
+			"stock": 16,
 			"variations": ["silver", "platinum"],
 			"categories": [4],
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."

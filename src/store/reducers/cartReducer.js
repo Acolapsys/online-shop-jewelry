@@ -22,6 +22,11 @@ const cartReducer = (state = initialState, action) => {
       }
       return { ...state, cart: cart, fullCartPrice: getFullCartPrice(cart) };
     }
+    case "DELETE_CART_ITEM": {
+      const newCart = state.cart.filter(item => item.id !== action.payload)
+
+      return {...state, cart: newCart, fullCartPrice: getFullCartPrice(newCart)}
+    }
 
     default:
       return state;

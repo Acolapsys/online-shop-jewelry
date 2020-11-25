@@ -1,7 +1,19 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import {CartItem} from "../../components";
+import { deleteCartItem } from "../../store/actions/cartAction";
+
+
 
 const Cart = () => {
+  const dispatch = useDispatch()
+  const {cart} = useSelector(({cartPage}) => ({
+    cart: cartPage.cart
+  }))
+
+  const onDeleteCartItem = (productId) => {
+    dispatch(deleteCartItem(productId))
+  }
   return (
     <div id="content" className="full">
       <div className="cart-table">
@@ -14,56 +26,13 @@ const Cart = () => {
               <th className="total">Total</th>
               <th className="delete"></th>
             </tr>
-            <CartItem
-              imageLink="images/6.jpg"
-              title="Lorem ipsum dolor"
-              desc="Dignissimos ducimus qui blanditiis praesentium voluptatum
-                  deleniti atque corrupti quos dolores et quas molestias
-                  excepturi sint occaecati cupiditate non provident, similique
-                  sunt in culpa qui officia deserunt mollitia animi."
-              price="$1 350.00"
-              quantity="1"
-            />
-            <CartItem
-              imageLink="images/6.jpg"
-              title="Lorem ipsum dolor"
-              desc="Dignissimos ducimus qui blanditiis praesentium voluptatum
-                  deleniti atque corrupti quos dolores et quas molestias
-                  excepturi sint occaecati cupiditate non provident, similique
-                  sunt in culpa qui officia deserunt mollitia animi."
-              price="$1 350.00"
-              quantity="1"
-            />
-            <CartItem
-              imageLink="images/6.jpg"
-              title="Lorem ipsum dolor"
-              desc="Dignissimos ducimus qui blanditiis praesentium voluptatum
-                  deleniti atque corrupti quos dolores et quas molestias
-                  excepturi sint occaecati cupiditate non provident, similique
-                  sunt in culpa qui officia deserunt mollitia animi."
-              price="$1 350.00"
-              quantity="1"
-            />
-            <CartItem
-              imageLink="images/6.jpg"
-              title="Lorem ipsum dolor"
-              desc="Dignissimos ducimus qui blanditiis praesentium voluptatum
-                  deleniti atque corrupti quos dolores et quas molestias
-                  excepturi sint occaecati cupiditate non provident, similique
-                  sunt in culpa qui officia deserunt mollitia animi."
-              price="$1 350.00"
-              quantity="1"
-            />
-            <CartItem
-              imageLink="images/6.jpg"
-              title="Lorem ipsum dolor"
-              desc="Dignissimos ducimus qui blanditiis praesentium voluptatum
-                  deleniti atque corrupti quos dolores et quas molestias
-                  excepturi sint occaecati cupiditate non provident, similique
-                  sunt in culpa qui officia deserunt mollitia animi."
-              price="$1 350.00"
-              quantity="1"
-            />
+            {cart.map(item => (
+               <CartItem
+               key={item.id}
+               product={item}
+               deleteCartItem={onDeleteCartItem}
+             />
+            ))}
           </tbody>
         </table>
       </div>
