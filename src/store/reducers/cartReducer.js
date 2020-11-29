@@ -24,8 +24,17 @@ const cartReducer = (state = initialState, action) => {
     }
     case "DELETE_CART_ITEM": {
       const newCart = state.cart.filter(item => item.id !== action.payload)
-
       return {...state, cart: newCart, fullCartPrice: getFullCartPrice(newCart)}
+    }
+    case "CHANGE_QUANTITY_CART_ITEM": {
+      const cart = [...state.cart];
+      cart.forEach((item) => {
+        if (item.id === action.payload.id) {
+          item.quantity = action.payload.quantity;
+        }
+      });
+      return { ...state, cart: cart, fullCartPrice: getFullCartPrice(cart) };
+
     }
 
     default:

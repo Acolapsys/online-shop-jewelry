@@ -422,7 +422,7 @@ h1 {
 	cursor: pointer;
 }
 
-.crf-s:after {
+/* .crf-s:after {
 	content: "";
 	position: absolute;
 	top: 15px;
@@ -430,7 +430,7 @@ h1 {
 	width: 10px;
 	height: 5px;
 	background: url(./assets/images/ico_down.png) no-repeat;
-}
+} */
 
 .crf-sm li {
 	cursor: pointer;

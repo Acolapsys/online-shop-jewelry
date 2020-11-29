@@ -1,19 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {CartItem} from "../../components";
-import { deleteCartItem } from "../../store/actions/cartAction";
+import { changeQuantityCartItem, deleteCartItem } from "../../store/actions/cartAction";
+import utils from '../../utils'
 
 
 
 const Cart = () => {
   const dispatch = useDispatch()
-  const {cart} = useSelector(({cartPage}) => ({
-    cart: cartPage.cart
+  const {cart, fullCartPrice} = useSelector(({cartPage}) => ({
+    cart: cartPage.cart,
+    fullCartPrice: cartPage.fullCartPrice
   }))
+  const [shipment, setShipment] = useState(fullCartPrice <= 3000 ? 100 : 0)
 
   const onDeleteCartItem = (productId) => {
     dispatch(deleteCartItem(productId))
+    
   }
+  const onChangeQuantityCartItem = (data) => {
+    dispatch(changeQuantityCartItem(data))
+    console.log(cart);
+  }
+  useEffect(() => {
+    setShipment(fullCartPrice <= 3000 ? 100 : 0)
+
+  }, [fullCartPrice])
   return (
     <div id="content" className="full">
       <div className="cart-table">
@@ -31,6 +43,7 @@ const Cart = () => {
                key={item.id}
                product={item}
                deleteCartItem={onDeleteCartItem}
+               changeQuantityCartItem={onChangeQuantityCartItem}
              />
             ))}
           </tbody>
@@ -38,10 +51,10 @@ const Cart = () => {
       </div>
 
       <div className="total-count">
-        <h4>Subtotal: $4 500.00</h4>
-        <p>+shippment: $30.00</p>
+            <h4>Subtotal: {utils.formatCurrency(fullCartPrice)}</h4>
+            <p>+shippment: {utils.formatCurrency(shipment)}</p>
         <h3>
-          Total to pay: <strong>$4 530.00</strong>
+            Total to pay: <strong>{utils.formatCurrency(fullCartPrice + shipment)}</strong>
         </h3>
         <a href="/" className="btn-grey">
           Finalize and pay
