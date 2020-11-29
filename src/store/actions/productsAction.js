@@ -1,11 +1,13 @@
 import Axios from "axios";
+import { useSelector } from "react-redux";
 import { setError, setIsLoading } from "./generalAction";
 
 const SET_PRODUCTS = "SET_PRODUCTS"
 
 
 
-export const fetchProducts = () => (dispatch) => {
+export const fetchProducts = (category, productsPerPage, sortBy) => (dispatch) => {
+  
     
     
     dispatch(setIsLoading(true));

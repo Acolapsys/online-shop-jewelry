@@ -1,18 +1,27 @@
 
-import React from "react";
-import {useSelector  } from "react-redux";
+import React, { useEffect, useState } from "react";
+import {useDispatch, useSelector  } from "react-redux";
 
 import { Product, Pagination, Sidebar } from "../../components";
+import { fetchProducts } from "../../store/actions/productsAction";
 
 const Products = () => {
+  const dispatch = useDispatch()
 
-  const {category, products, productsPerPage} = useSelector(({productsPage, filters}) => {
+  const {category, products, productsPerPage, sortBy} = useSelector(({productsPage, filters}) => {
     return {      
       category: filters.category,
       products: productsPage.products,
-      productsPerPage: filters.productsPerPage
+      productsPerPage: filters.productsPerPage,
+      sortBy: filters.sortBy
     }
   })
+
+  useEffect(() => {
+    dispatch(fetchProducts(category, productsPerPage, sortBy))
+  }, [category, productsPerPage, sortBy])
+
+  
 
  
   return       <div id="body">
@@ -23,8 +32,6 @@ const Products = () => {
       <div id="content">
         <section className="products">
           {products
-          .filter((item) => category ? item.categories[0] === category : item)
-          .slice(0, productsPerPage)
           .map((product) => {
             return ( 
               <Product
