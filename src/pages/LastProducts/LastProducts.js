@@ -15,8 +15,6 @@ const LastProducts = () => {
       <h2>Last added products</h2>
       <section className="products">
         {products
-          .slice(-5)
-          .reverse()
           .map((product) => {
             return (
               <Product

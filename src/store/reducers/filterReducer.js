@@ -4,8 +4,9 @@
 
 const initialState = {
     category: 0,
-    sortBy: "Popularity",
-    productsPerPage: 8
+    sortBy: "rating",
+    productsPerPage: 8,
+    currentPage: 1
 }
 
 const filterReducer = (state = initialState, action) => {
@@ -18,6 +19,9 @@ const filterReducer = (state = initialState, action) => {
         }
         case ("SET_PRODUCTS_PER_PAGE"): {
             return {...state, productsPerPage: action.payload}
+        }
+        case ("SET_CURRENT_PAGE"): {
+            return {...state, currentPage: action.payload}
         }
         default: return state
     }

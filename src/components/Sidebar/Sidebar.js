@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setPerPageAmount, setSortBy } from "../../store/actions/filterAction";
 
 const perPageList = [8, 16, 32];
-const sortList = ['Popularity', 'Date', 'Price'];
+const sortList = ['Rating', 'Date', 'Price'];
 
 const Sidebar = () => {
   const dispatch = useDispatch();

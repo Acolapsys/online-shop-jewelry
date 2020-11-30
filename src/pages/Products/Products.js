@@ -8,18 +8,19 @@ import { fetchProducts } from "../../store/actions/productsAction";
 const Products = () => {
   const dispatch = useDispatch()
 
-  const {category, products, productsPerPage, sortBy} = useSelector(({productsPage, filters}) => {
+  const {category, products, productsPerPage, sortBy, currentPage} = useSelector(({productsPage, filters}) => {
     return {      
       category: filters.category,
       products: productsPage.products,
       productsPerPage: filters.productsPerPage,
-      sortBy: filters.sortBy
+      sortBy: filters.sortBy,
+      currentPage: filters.currentPage
     }
   })
 
   useEffect(() => {
-    dispatch(fetchProducts(category, productsPerPage, sortBy))
-  }, [category, productsPerPage, sortBy])
+    dispatch(fetchProducts(category, productsPerPage, currentPage, sortBy))
+  }, [category, productsPerPage, sortBy, currentPage])
 
   
 

@@ -39,8 +39,9 @@
 			"title": "Silver ring",
 			"price": 1850,
 			"stock": 16,
+			"rating": 4.5,
 			"variations": ["silver", "platinum"],
-			"categories": [2],
+			"categories": 2,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -49,8 +50,9 @@
 			"title": "Silver necklace",
 			"price": 1850,
 			"stock": 10,
+			"rating": 4.7,
 			"variations": ["silver", "platinum"],
-			"categories": [5],
+			"categories": 5,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -59,8 +61,9 @@
 			"title": "Silver bracelet",
 			"price": 1850,
 			"stock": 16,
+			"rating": 4,
 			"variations": ["silver", "platinum"],
-			"categories": [3],
+			"categories": 3,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -69,8 +72,9 @@
 			"title": "Platinum ring",
 			"price": 1820,
 			"stock": 16,
+			"rating": 3.5,
 			"variations": ["silver", "platinum"],
-			"categories": [2],
+			"categories": 2,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -79,8 +83,9 @@
 			"title": "Silver earing",
 			"price": 1750,
 			"stock": 160,
+			"rating": 5,
 			"variations": ["silver", "platinum"],
-			"categories": [1],
+			"categories": 1,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -89,8 +94,9 @@
 			"title": "Gold pendant",
 			"price": 1050,
 			"stock": 16,
+			"rating": 3.9,
 			"variations": ["gold", "platinum"],
-			"categories": [4],
+			"categories": 4,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -99,8 +105,9 @@
 			"title": "Gold eagle ring",
 			"price": 2850,
 			"stock": 6,
+			"rating": 4.9,
 			"variations": ["silver", "platinum", "gold"],
-			"categories": [2],
+			"categories": 2,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -109,8 +116,9 @@
 			"title": "Silver ethnic bracelet",
 			"price": 2850,
 			"stock": 16,
+			"rating": 4.9,
 			"variations": ["silver", "platinum"],
-			"categories": [3],
+			"categories": 3,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -119,8 +127,9 @@
 			"title": "Silver ring",
 			"price": 1850,
 			"stock": 16,
+			"rating": 5,
 			"variations": ["silver", "platinum"],
-			"categories": [2],
+			"categories": 2,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -129,8 +138,9 @@
 			"title": "Platinum cross pendant",
 			"price": 3550,
 			"stock": 16,
+			"rating": 4.7,
 			"variations": ["silver", "platinum"],
-			"categories": [4],
+			"categories": 4,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -139,8 +149,9 @@
 			"title": "Gold wedding ring",
 			"price": 1750,
 			"stock": 16,
+			"rating": 4.9,
 			"variations": ["gold", "platinum"],
-			"categories": [2],
+			"categories": 2,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -149,8 +160,9 @@
 			"title": "Silver ring",
 			"price": 1150,
 			"stock": 16,
+			"rating": 4,
 			"variations": ["silver", "platinum"],
-			"categories": [2],
+			"categories": 2,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -159,8 +171,9 @@
 			"title": "Gold ring",
 			"price": 1050,
 			"stock": 16,
+			"rating": 4,
 			"variations": ["silver", "platinum"],
-			"categories": [2],
+			"categories": 2,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
 		{
@@ -169,8 +182,9 @@
 			"title": "Silver pendant",
 			"price": 1650,
 			"stock": 16,
+			"rating": 5,
 			"variations": ["silver", "platinum"],
-			"categories": [4],
+			"categories": 4,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		}
 			
