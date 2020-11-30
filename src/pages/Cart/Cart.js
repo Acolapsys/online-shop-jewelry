@@ -23,7 +23,7 @@ const Cart = () => {
     console.log(cart);
   }
   useEffect(() => {
-    setShipment(fullCartPrice <= 3000 ? 100 : 0)
+    setShipment(fullCartPrice >= 3000 || !fullCartPrice ? 0 : 100)
 
   }, [fullCartPrice])
   return (
