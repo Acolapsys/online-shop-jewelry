@@ -1,9 +1,16 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Product } from "../../components";
+import { fetchLastProducts } from "../../store/actions/productsAction";
 import "./LastProducts.css";
 
+
 const LastProducts = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchLastProducts())      
+  },[])
   const { products } = useSelector(({ productsPage }) => {
     return {
       products: productsPage.products,

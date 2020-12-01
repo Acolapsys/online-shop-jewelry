@@ -10,23 +10,15 @@ import ProductFull from "./pages/ProductFull/ProductFull";
 import Products from "./pages/Products/Products";
 import {setCategory} from "./store/actions/filterAction"
 import { fetchCategories } from "./store/actions/generalAction";
-import { fetchLastProducts } from "./store/actions/productsAction";
-
-
-
 
 
 
 function App() {
   const dispatch = useDispatch();
-  
   const categoriesList = useSelector(({general}) => general.categoriesList)
-  const category = useSelector(({filters}) => filters.category)
   
   useEffect(() => {
-    dispatch(fetchCategories())
-    
-    dispatch(fetchLastProducts())      
+    dispatch(fetchCategories())  
   },[])
   const onChangeCategory = (category) => {
     dispatch(setCategory(category))
