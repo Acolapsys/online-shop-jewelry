@@ -654,6 +654,7 @@ h1 {
 	border: 1px solid #cdcdcd;
 	background-color: #fff;
 	display: inline-block;
+	cursor: pointer
 }
 
 .products-wrap {

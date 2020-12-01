@@ -8,19 +8,19 @@ import { fetchProducts } from "../../store/actions/productsAction";
 const Products = () => {
   const dispatch = useDispatch()
 
-  const {category, products, productsPerPage, sortBy, currentPage} = useSelector(({productsPage, filters}) => {
+  const {category, products, productsPerPage, sortBy, activePage} = useSelector(({productsPage, filters}) => {
     return {      
       category: filters.category,
       products: productsPage.products,
       productsPerPage: filters.productsPerPage,
       sortBy: filters.sortBy,
-      currentPage: filters.currentPage
+      activePage: filters.activePage
     }
   })
 
   useEffect(() => {
-    dispatch(fetchProducts(category, productsPerPage, currentPage, sortBy))
-  }, [category, productsPerPage, sortBy, currentPage])
+    dispatch(fetchProducts(category, sortBy))
+  }, [category, sortBy])
 
   
 
@@ -33,6 +33,7 @@ const Products = () => {
       <div id="content">
         <section className="products">
           {products
+          .slice((activePage - 1) * productsPerPage, activePage * productsPerPage)
           .map((product) => {
             return ( 
               <Product

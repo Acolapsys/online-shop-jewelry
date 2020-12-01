@@ -1,15 +1,15 @@
 import Axios from "axios";
-import { useSelector } from "react-redux";
+import { setActivePage } from "./filterAction";
 import { setError, setIsLoading } from "./generalAction";
 
 const SET_PRODUCTS = "SET_PRODUCTS"
 
 
 
-export const fetchProducts = (category, productsPerPage, currentPage, sortBy) => (dispatch) => {
+export const fetchProducts = (category, sortBy) => (dispatch) => {
     dispatch(setIsLoading(true));
     Axios
-        .get(`http://localhost:3001/products?_page=${currentPage}${category ? `&categories=${category}` : ''}&_limit=${productsPerPage}&_sort=${sortBy.toLowerCase()}`)
+        .get(`http://localhost:3001/products?_sort=${sortBy.toLowerCase()}${category ? `&categories=${category}` : ''}`)
         .then(({data}) => {
           
           dispatch(setProducts(data));

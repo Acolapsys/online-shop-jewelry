@@ -6,22 +6,22 @@ const initialState = {
     category: 0,
     sortBy: "rating",
     productsPerPage: 8,
-    currentPage: 1
+    activePage: 1
 }
 
 const filterReducer = (state = initialState, action) => {
     switch (action.type) {
         case ("SET_SORT_BY"): {
-            return {...state, sortBy: action.payload}
+            return {...state, sortBy: action.payload, activePage: 1}
     }
         case ("SET_CATEGORY"): {
-            return {...state, category: action.payload}
+            return {...state, category: action.payload, activePage: 1}
         }
         case ("SET_PRODUCTS_PER_PAGE"): {
-            return {...state, productsPerPage: action.payload}
+            return {...state, productsPerPage: action.payload, activePage: 1}
         }
-        case ("SET_CURRENT_PAGE"): {
-            return {...state, currentPage: action.payload}
+        case ("SET_ACTIVE_PAGE"): {
+            return {...state, activePage: action.payload}
         }
         default: return state
     }

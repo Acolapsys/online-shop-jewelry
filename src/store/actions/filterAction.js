@@ -5,7 +5,7 @@ const SET_CATEGORY = "SET_CATEGORY"
 
 const SET_PRODUCTS_PER_PAGE = "SET_PRODUCTS_PER_PAGE"
 
-const SET_CURRENT_PAGE = "SET_CURRENT_PAGE"
+const SET_ACTIVE_PAGE = "SET_ACTIVE_PAGE"
 
 
 export const setSortBy = (payload) => {
@@ -20,6 +20,6 @@ export const setPerPageAmount = (payload) => {
     return {type: SET_PRODUCTS_PER_PAGE, payload}
 }
 
-export const setCurrentPage = (payload) => {
-    return {type: SET_CURRENT_PAGE, payload}
+export const setActivePage = (payload) => {
+    return {type: SET_ACTIVE_PAGE, payload}
 }

@@ -20,7 +20,6 @@ const Cart = () => {
   }
   const onChangeQuantityCartItem = (data) => {
     dispatch(changeQuantityCartItem(data))
-    console.log(cart);
   }
   useEffect(() => {
     setShipment(fullCartPrice >= 3000 || !fullCartPrice ? 0 : 100)

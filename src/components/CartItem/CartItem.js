@@ -1,5 +1,4 @@
 import React from "react";
-import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import utils from '../../utils'
 
@@ -8,21 +7,16 @@ import './CartItem.css'
 
 
 const CartItem = ({product, deleteCartItem, changeQuantityCartItem }) => {
-  const dispatch = useDispatch()
-  
-
   const onDeleteClick = (productId) => {
-    console.log("deleteId=", productId);
     deleteCartItem(productId)
-
-
   }
   const {price, quantity, image, title, id, description} = {...product}
   const totalPrice = price * quantity;
   const onChangeQuantity = (e) => {
+    if (e.target.value === 0) {
+      onDeleteClick(id)
+    }
     changeQuantityCartItem({id, quantity: e.target.value})
-
-
   }
   return (
     <tr>
