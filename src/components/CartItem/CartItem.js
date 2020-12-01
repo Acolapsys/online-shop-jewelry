@@ -13,8 +13,8 @@ const CartItem = ({product, deleteCartItem, changeQuantityCartItem }) => {
   const {price, quantity, image, title, id, description} = {...product}
   const totalPrice = price * quantity;
   const onChangeQuantity = (e) => {
-    if (e.target.value === 0) {
-      onDeleteClick(id)
+    if (e.target.value < 0) {
+      return
     }
     changeQuantityCartItem({id, quantity: e.target.value})
   }
