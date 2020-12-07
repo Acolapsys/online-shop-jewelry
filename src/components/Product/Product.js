@@ -6,7 +6,7 @@ import ContentLoader from "react-content-loader"
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../store/actions/cartAction";
 import utils from "../../utils"
-
+import Rating from 'react-rating'
 
 
 

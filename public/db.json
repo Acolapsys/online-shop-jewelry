@@ -1,11 +1,5 @@
 {
-
-	"cart": [
-
-
-	],
-
-
+	"cart": [],
 	"categories": [
 		{
 			"id": 0,
@@ -40,7 +34,10 @@
 			"price": 1850,
 			"stock": 16,
 			"rating": 4.5,
-			"variations": ["silver", "platinum"],
+			"variations": [
+				"silver",
+				"platinum"
+			],
 			"categories": 2,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
@@ -51,7 +48,10 @@
 			"price": 1850,
 			"stock": 10,
 			"rating": 4.7,
-			"variations": ["silver", "platinum"],
+			"variations": [
+				"silver",
+				"platinum"
+			],
 			"categories": 5,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
@@ -62,7 +62,10 @@
 			"price": 1850,
 			"stock": 16,
 			"rating": 4,
-			"variations": ["silver", "platinum"],
+			"variations": [
+				"silver",
+				"platinum"
+			],
 			"categories": 3,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
@@ -73,7 +76,10 @@
 			"price": 1820,
 			"stock": 16,
 			"rating": 3.5,
-			"variations": ["silver", "platinum"],
+			"variations": [
+				"silver",
+				"platinum"
+			],
 			"categories": 2,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
@@ -84,7 +90,10 @@
 			"price": 1750,
 			"stock": 160,
 			"rating": 5,
-			"variations": ["silver", "platinum"],
+			"variations": [
+				"silver",
+				"platinum"
+			],
 			"categories": 1,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
@@ -95,7 +104,10 @@
 			"price": 1050,
 			"stock": 16,
 			"rating": 3.9,
-			"variations": ["gold", "platinum"],
+			"variations": [
+				"gold",
+				"platinum"
+			],
 			"categories": 4,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
@@ -106,7 +118,11 @@
 			"price": 2850,
 			"stock": 6,
 			"rating": 4.9,
-			"variations": ["silver", "platinum", "gold"],
+			"variations": [
+				"silver",
+				"platinum",
+				"gold"
+			],
 			"categories": 2,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
@@ -117,7 +133,10 @@
 			"price": 2850,
 			"stock": 16,
 			"rating": 4.9,
-			"variations": ["silver", "platinum"],
+			"variations": [
+				"silver",
+				"platinum"
+			],
 			"categories": 3,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
@@ -128,7 +147,10 @@
 			"price": 1850,
 			"stock": 16,
 			"rating": 5,
-			"variations": ["silver", "platinum"],
+			"variations": [
+				"silver",
+				"platinum"
+			],
 			"categories": 2,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
@@ -139,7 +161,10 @@
 			"price": 3550,
 			"stock": 16,
 			"rating": 4.7,
-			"variations": ["silver", "platinum"],
+			"variations": [
+				"silver",
+				"platinum"
+			],
 			"categories": 4,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
@@ -150,7 +175,10 @@
 			"price": 1750,
 			"stock": 16,
 			"rating": 4.9,
-			"variations": ["gold", "platinum"],
+			"variations": [
+				"gold",
+				"platinum"
+			],
 			"categories": 2,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
@@ -161,7 +189,10 @@
 			"price": 1150,
 			"stock": 16,
 			"rating": 4,
-			"variations": ["silver", "platinum"],
+			"variations": [
+				"silver",
+				"platinum"
+			],
 			"categories": 2,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
@@ -172,7 +203,10 @@
 			"price": 1050,
 			"stock": 16,
 			"rating": 4,
-			"variations": ["silver", "platinum"],
+			"variations": [
+				"silver",
+				"platinum"
+			],
 			"categories": 2,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		},
@@ -183,10 +217,35 @@
 			"price": 1650,
 			"stock": 16,
 			"rating": 5,
-			"variations": ["silver", "platinum"],
+			"variations": [
+				"silver",
+				"platinum"
+			],
 			"categories": 4,
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 		}
-			
-		]
+	],
+	"blogs": [
+		{
+			"id": 0,
+			"title": "sed do eiusmod tempor incididunt",
+			"subtitle": "Duis aute irure dolor in reprehenderit",
+			"text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.",
+			"image": "images/2.jpg"
+		},
+		{
+			"id": 1,
+			"title": "consequatur",
+			"subtitle": "voluptatem",
+			"text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.",
+			"image": "images/3.jpg"
+		},
+		{
+			"id": 2,
+			"title": "culpa qui officia",
+			"subtitle": "Duis aute irure dolor in reprehenderit",
+			"text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.",
+			"image": "images/4.jpg"
+		}
+	]
 }

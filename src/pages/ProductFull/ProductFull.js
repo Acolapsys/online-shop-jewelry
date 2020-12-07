@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 
 
@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 
 const ProductFull = (props) => {
     const [products, setProducts] = useState([])
-    const productId =  props.match.params.id
+    // const productId =  props.match.params.id
 
 // useEffect(() => {
 //     setIsLoading(true)

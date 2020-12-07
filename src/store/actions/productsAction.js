@@ -1,5 +1,4 @@
 import Axios from "axios";
-import { setActivePage } from "./filterAction";
 import { setError, setIsLoading } from "./generalAction";
 
 const SET_PRODUCTS = "SET_PRODUCTS"

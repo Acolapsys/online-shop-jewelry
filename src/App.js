@@ -6,8 +6,10 @@ import "./App.css";
 
 import { Header, Footer, Nav, Breadcrumbs } from "./components";
 import { LastProducts, QuickLinks, Cart } from "./pages";
+import Blog from "./pages/Blog/Blog";
 import ProductFull from "./pages/ProductFull/ProductFull";
 import Products from "./pages/Products/Products";
+import { fetchBlogs, fetchLastBlogs } from "./store/actions/blogActions";
 import {setCategory} from "./store/actions/filterAction"
 import { fetchCategories } from "./store/actions/generalAction";
 
@@ -19,6 +21,7 @@ function App() {
   
   useEffect(() => {
     dispatch(fetchCategories())  
+    
   },[])
   const onChangeCategory = (category) => {
     dispatch(setCategory(category))
@@ -41,6 +44,7 @@ function App() {
           <Route path='/products' component={Products} />
           <Route path='/cart' component={Cart} />
           <Route path='/product/:id' component={ProductFull} />
+          <Route path='/blog/:id' component={Blog} />
         </div>
       </div>
 

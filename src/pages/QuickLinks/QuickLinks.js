@@ -1,48 +1,36 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
+import { fetchLastBlogs } from '../../store/actions/blogActions'
 import './QuickLinks.css'
 
 
 
 const QuickLinks = () => {
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(fetchLastBlogs())  
+  }, [])
+
+  const {blogs} = useSelector(({blogsPage}) => ({
+    blogs: blogsPage.blogs
+  }))
     return 	<section className="quick-links">
-    <article style={{ backgroundImage: "url(images/2.jpg)" }}>
-      <a href="/" className="table">
-        <div className="cell">
-          <div className="text">
-            <h4>Lorem ipsum</h4>
-            <hr />
-            <h3>Dolor sit amet</h3>
+      {blogs.map(blog => (
+        <article key={blog.id} style={{ backgroundImage: `url(${blog.image})` }}>
+        <Link to={`/blog/${blog.id}`} className="table">
+          <div className="cell">
+            <div className="text">
+              <h4>{blog.title}</h4>
+              <hr />
+              <h3>{blog.subtitle}</h3>
+            </div>
           </div>
-        </div>
-      </a>
-    </article>
-    <article
-      className="red"
-      style={{ backgroundImage: "url(./images/3.jpg)" }}
-    >
-      <a href="/" className="table">
-        <div className="cell">
-          <div className="text">
-            <h4>consequatur</h4>
-            <hr />
-            <h3>voluptatem</h3>
-            <hr />
-            <p>Accusantium</p>
-          </div>
-        </div>
-      </a>
-    </article>
-    <article style={{ backgroundImage: "url(./images/4.jpg)" }}>
-      <a href="/" className="table">
-        <div className="cell">
-          <div className="text">
-            <h4>culpa qui officia</h4>
-            <hr />
-            <h3>magnam aliquam</h3>
-          </div>
-        </div>
-      </a>
-    </article>
+        </Link>
+      </article>
+
+      ))}
+
   </section>
 
 

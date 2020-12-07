@@ -22,7 +22,7 @@ const CartItem = ({product, deleteCartItem, changeQuantityCartItem }) => {
     <tr>
       <td className="items">
         <div className="image">
-        <Link to={`/products/${id}`}>
+        <Link to={`/product/${id}`}>
           <img src={image} style={{width: "112px", height: "112px"}} alt="" />
           </Link>
         </div>

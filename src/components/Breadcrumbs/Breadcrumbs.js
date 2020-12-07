@@ -15,7 +15,7 @@ const Breadcrumbs = () => {
   const location = useLocation();
   const curRoute = location.pathname.split("/")[1]
   
-  console.log( location, "curr=", location.pathname.split("/")[1]);
+  // console.log( location, "curr=", location.pathname.split("/")[1]);
 
   return ( location.pathname !== '/' &&
     <div id="breadcrumbs">
